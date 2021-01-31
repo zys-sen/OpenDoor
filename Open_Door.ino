@@ -17,9 +17,9 @@ void setup(){
   pinMode(LED_BUILTIN, OUTPUT);      // 初始化NodeMCU控制板载LED引脚为OUTPUT
  
   //通过addAp函数存储  WiFi名称       WiFi密码
-  wifiMulti.addAP("forest's HUAWEI Mate 30 5G", "Hello World"); // 将需要连接的一系列WiFi ID和密码输入这里
-  wifiMulti.addAP("301", "30130100"); // ESP8266-NodeMCU再启动后会扫描当前网络
-  wifiMulti.addAP("607落泪", "01020202"); // 环境查找是否有这里列出的WiFi ID。如果有
+  wifiMulti.addAP("", ""); // 将需要连接的一系列WiFi ID和密码输入这里
+  wifiMulti.addAP("", ""); // ESP8266-NodeMCU再启动后会扫描当前网络
+  wifiMulti.addAP("", ""); // 环境查找是否有这里列出的WiFi ID。如果有
   Serial.println("Connecting ...");                            // 则尝试使用此处存储的密码进行连接。
  
   int i = 0;                                 
